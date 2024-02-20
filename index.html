@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Custom Cursor Gallery</title>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="image-container">
+        <img
+          class="photo"
+          src="image1.jpg"
+          alt="Image 1"
+          onclick="openModal('image1.jpg')"
+        />
+        <div class="image-text">
+          <a
+            href="https://visit-gem.com/en/home"
+            class="text-link"
+            target="_blank"
+          >
+            <p>Visit the Grand Egyptian Museum</p>
+          </a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img
+          class="photo"
+          src="image2.jpg"
+          alt="Image 2"
+          onclick="openModal('image2.jpg')"
+        />
+        <div class="image-text">
+          <a
+            href="https://visit-gem.com/en/children"
+            class="text-link"
+            target="_blank"
+          >
+            <p>The Children’s Museum Tour</p>
+          </a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img
+          class="photo"
+          src="image3.jpg"
+          alt="Image 3"
+          onclick="openModal('image3.jpg')"
+        />
+        <div class="image-text">
+          <a
+            href="https://visit-gem.com/en/tut"
+            class="text-link"
+            target="_blank"
+          >
+            <p>Tutankhamun Immersive Experience</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal">
+      <span id="close" class="close" onclick="closeModal()">&times;</span>
+      <a id="target-link" target="_blank">
+        <img class="modal-content" id="modalImage" />
+      </a>
+    </div>
+
+    <div id="cursor"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
